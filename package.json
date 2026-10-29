@@ -1,0 +1,26 @@
+{
+  "name": "audacy_automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test:qa": "cross-env TEST_ENV=qa cucumber-js",
+    "test:dev": "cross-env TEST_ENV=dev cucumber-js",
+    "test:qa:parallel": "cross-env TEST_ENV=qa cucumber-js --parallel 5",
+    "test:dev:parallel": "cross-env TEST_ENV=dev cucumber-js --parallel 3",
+    "auth:qa": "cross-env TEST_ENV=qa ts-node src/setup/globalSetup.ts",
+    "auth:dev": "cross-env TEST_ENV=dev ts-node src/setup/globalSetup.ts",
+    "test:headed:qa": "cross-env TEST_ENV=qa HEADLESS=false cucumber-js",
+    "test:headed:dev": "cross-env TEST_ENV=dev HEADLESS=false cucumber-js",
+    "dryrun:qa": "cross-env TEST_ENV=qa cucumber-js --dry-run",
+    "dryrun:dev": "cross-env TEST_ENV=dev cucumber-js --dry-run"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.58.2",
+    "cross-env": "^10.1.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "dotenv": "^16.6.1",
+    "multiple-cucumber-html-reporter": "^3.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

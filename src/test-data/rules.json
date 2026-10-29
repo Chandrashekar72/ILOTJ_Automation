@@ -1,0 +1,194 @@
+{
+  "orderSeparation": {
+    "Rule": "I would want to add a separation rule",
+    "ruleType": "Order Separation",
+    "minTime": "30min",
+    "tierRule": "Tier 1",
+    "global": "Apply globally to all advertisers and break codes",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Order",
+      "description": "30",
+        "wta": "global",
+      "wnta" : "CM"
+
+    }
+  },
+    "orderSeparationVariant": {
+    "Rule": "I would want to add a separation rule",
+    "ruleType": "Order Separation",
+    "minTime": "5min",
+    "tierRule": "Tier 1",
+    "global": "Apply to Audacy",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Order",
+      "description": "5",
+      "wta": "Audacy",
+      "wnta": "CM"
+    }
+ },
+
+ "orderSeparationMerge": {
+  "Rule": "I would want to add a separation rule",
+  "ruleType": "Order Separation",
+  "minTime": "5min",
+  "tierRule": "Tier 1",
+  "global": "Apply to Verizon",
+  "exemptionYes": "Yes, add exemptions",
+  "exemptionValue": "Breakcode : LINER",
+
+  "mergeIntent": "Merge the rule",
+  "mergeConfirm": "Yes, proceed with the merge",
+
+  "expected": {
+    "title": "Order",
+    "description": "5",
+    "wta": "Verizon",
+    "wnta": "LINER"
+  }
+},
+
+
+  "advertiserSeparation": {
+    "Rule": "I would want to add a separation rule",
+    "ruleType": "Advertiser Separation",
+    "minTime": "30min",
+    "tierRule": "Tier 1",
+    "global": "Apply globally to all advertisers and break codes",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Advertiser Separation",
+      "description": "30",
+        "wta": "global",
+      "wnta" : "CM"
+    }
+  },
+
+  "inventorycodeMatching": {
+    "Rule": "I would want to add a Inventory Window matching rule",
+    "tierRule": "Tier 1",
+    "Enable": "Enable",
+    "global": "Apply globally to all advertisers and break codes",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Inventory",
+      "description": "inventory",
+      "wta": "global",
+      "wnta" : "CM"
+   
+    }
+  },
+
+  "breakcodeMatching": {
+    "Rule": "I would want to add a Break code matching rule",
+    "tierRule": "Tier 1",
+    "Enable": "Enable enforcement",
+    "global": "Apply globally to all advertisers and break codes",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Break",
+     "description": "break",
+      "wta": "global",
+      "wnta" : "CM"
+    }
+  },
+
+    "maxPriority": {
+    "Rule": "I would want to add a Break code matching rule",
+    "tierRule": "Tier 1",
+    "Enable": "Enable enforcement",
+    "global": "Apply globally to all advertisers and break codes",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Break",
+     "description": "break",
+      "wta": "global",
+      "wnta" : "CM"
+    }
+  },
+
+  "restrictPlacement": {
+    "Rule": "I want to add a learning description",
+    "ruleType": "Restrict Placement",
+    "tierRule": "Tier 1",
+    "global": "Apply to advertiser Audacy",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM",
+
+    "expected": {
+      "title": "Restrict",
+     "description": "Prevents",
+    "wta": "Audacy",
+      "wnta" : "CM"
+    }
+  },
+
+
+   "advertiserPairPlacementRestriction": {
+    "Rule": "I would want to add a separation rule",
+    "ruleType": "Advertiser Pair Placement Restriction",
+    "tierRule": "Tier 1",
+    "global": "Apply to Kroger and Audacy",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM"
+  },
+
+     "spotPlacement": {
+    "Rule": "I want to add a learning description",
+    "ruleType": "Spot First",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Breakcode : CM"
+  },
+  "common": {
+  "viewEditExisting": "View or edit the existing learning"
+},
+  "orderSeparationConflict": {
+    "Rule": "I would want to add a separation rule",
+    "ruleType": "Order Separation",
+    "minTime": "5min",
+    "tierRule": "Tier 1",
+    "global": "Apply to Audacy",
+    "exemptionYes": "Yes, add exemptions",
+    "exemptionValue": "Apply to Audacy",
+
+    "expected": {
+      "title": "Order",
+      "description": "30",
+        "wta": "global",
+      "wnta" : "CM"
+
+    }
+  },
+    "orderSeparationEdit": {
+    "editminTime": "Update it description to 50min",
+    "editWTA" : "Edit When to Apply",
+    "editglobal": "Apply to Cricket",
+    "editWNTA" : "Edit When not to Apply",
+    "exemptionValue": "Apply to SHORT",
+
+    "expected": {
+      "title": "Order",
+      "description": "50",
+        "wta": "Cricket",
+      "wnta" : "SHORT"
+
+    }
+  }
+
+
+
+
+}

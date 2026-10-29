@@ -1,0 +1,38 @@
+Feature: Learning Management
+
+Scenario: Create Order + Advertiser rule in same scope
+
+  Given User is logged in
+
+  When User clicks on Setting button and navigates to Learning Management
+  And User opens Create Scope modal
+  And User clicks on Scope type dropdown and selects Genre
+  And User enters unqiue Scope name
+  And User click on Generate Description
+  And User clicks on Create New Scope Button
+  And User clicks on Tier level Delete button and Deletes the Tierl rule
+
+  # ---------------- RULE 1 ----------------
+  Then User clicks on Add New Learning button
+  And User creates rule "orderSeparation"
+  And User saves rule "orderSeparation"
+
+  # ---------------- RULE 2 ----------------
+  Then User clicks on Add New Learning button
+  And User creates rule "advertiserSeparation"
+  And User saves rule "advertiserSeparation"
+
+  # ---------------- RULE 3 ----------------
+  Then User clicks on Add New Learning button
+  And User creates rule "inventorycodeMatching"
+  And User saves rule "inventorycodeMatching"
+
+  # ---------------- RULE 4 ----------------
+  Then User clicks on Add New Learning button
+  And User creates rule "breakcodeMatching"
+  And User saves rule "breakcodeMatching"
+
+  # ---------------- RULE 5 ----------------
+  Then User clicks on Add New Learning button
+  And User creates rule "restrictPlacement"
+  And User saves rule "restrictPlacement"
